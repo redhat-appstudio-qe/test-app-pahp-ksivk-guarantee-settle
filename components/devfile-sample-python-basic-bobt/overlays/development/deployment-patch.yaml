@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-bobt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-zphe-tenant/test-app-pahp/devfile-sample-python-basic-bobt@sha256:4f080f3d13adf56ae0e537eabc87c3dd080e1cc73c3e5a53f3207db7f55d12ce
+        name: my-python
+        resources: {}
+status: {}
